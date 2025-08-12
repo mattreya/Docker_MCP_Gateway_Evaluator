@@ -1,0 +1,8 @@
+@gemini-cli:
+refer to the docker web page for Docker MCP and Toolkit at https://docs.docker.com/ai/mcp-catalog-and-toolkit/
+
+1.) I'd like to build a new gemini-cli slash command that will lookup the MCP_catalog - COMPLETE
+2.) I'd like another new gemini-cli slash command to determine the best tool to use in the MCP_toolkit after reviewing the catalog. - COMPLETE
+3.) When there is a suitable
+ match, offer it to use to build with. - COMPLETE
+4.) Create a new slash command called "askgordon" - COMPLETE

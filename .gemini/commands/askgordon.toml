@@ -1,0 +1,3 @@
+name = "askgordon"
+description = "Ask Gordon, the AI counterpart to Gemini CLI, a question."
+command = "/home/matt/PycharmProjects/matt_raio_bot_constraints/venv/bin/python -c \"import asyncio; from mcp_commands import ask_gordon; asyncio.run(ask_gordon('{query}'))\""

@@ -1,0 +1,3 @@
+name = "mcp_catalog_lookup"
+description = "Looks up the MCP catalog for a given query."
+command = "/home/matt/PycharmProjects/matt_raio_bot_constraints/venv/bin/python -c \"import asyncio; from mcp_commands import mcp_catalog_lookup; asyncio.run(mcp_catalog_lookup('{query}'))\""

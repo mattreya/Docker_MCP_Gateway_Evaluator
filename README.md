@@ -10,11 +10,37 @@ This project serves as a template for developing Python applications that integr
 - **NIST Guidelines Reference:** Contains a reference to NIST guidelines (`/nist`) for secure bot development, emphasizing best practices for handling sensitive information.
 - **Configurable Preferences:** Introduces a preference system (`/preferences`) that allows the Gemini CLI to understand and adapt to user-defined preferences for various tasks, such as preferred tools for web searches, project analysis, and security scanning.
 
-## Project Focus: Web Scraper
+## Project Focus: Docker MCP and Toolkit Integration
 
-This repository's primary focus is the `scraper.py` script. This script demonstrates how to build a simple web scraper that leverages the `ddg` slash command to search for and display the latest news from a specified website (currently `darkreading.com`).
+This project's primary focus is the integration with Docker's Multi-Cloud Platform (MCP) and Toolkit, exposed through new Gemini CLI slash commands. These commands streamline the process of discovering and utilizing Docker tools directly from your command line.
 
-This project was built upon the foundation of the `matt_raio_bot_constraints` repository, which provides the underlying framework for Gemini CLI integration and custom slash commands.
+### New Docker-Related Slash Commands:
+
+-   **`/mcp_catalog_lookup`**:
+    *   **Purpose:** This command allows you to search and retrieve information from the Docker MCP Catalog. It helps in discovering available Docker images, services, and solutions.
+    *   **How to use:**
+        ```
+        /mcp_catalog_lookup <search_query>
+        ```
+        Replace `<search_query>` with keywords to find relevant items in the catalog.
+
+-   **`/mcp_toolkit_selector`**:
+    *   **Purpose:** After reviewing the MCP Catalog, this command assists in determining the best Docker tool from the MCP Toolkit to use for a specific task or requirement. It aims to guide users to the most suitable solution.
+    *   **How to use:**
+        ```
+        /mcp_toolkit_selector <catalog_item_id_or_description>
+        ```
+        Provide an identifier or description of the catalog item you're interested in, and the command will suggest appropriate tools.
+
+-   **`/askgordon`**:
+    *   **Purpose:** While not directly tied to Docker MCP, this command is part of the new set of functionalities. Its specific purpose would be defined by its implementation, but it's designed to provide intelligent assistance or answer questions within the Gemini CLI context.
+    *   **How to use:**
+        ```
+        /askgordon <your_question>
+        ```
+        Ask Gordon anything, and it will attempt to provide a relevant answer or guidance.
+
+This project builds upon the foundation of the `matt_raio_bot_constraints` repository, which provides the underlying framework for Gemini CLI integration and custom slash commands.
 
 ## Setup and Installation
 

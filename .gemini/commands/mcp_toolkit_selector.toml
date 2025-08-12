@@ -1,0 +1,3 @@
+name = "mcp_toolkit_selector"
+description = "Determines the best tool to use in the MCP toolkit after reviewing the catalog."
+command = "/home/matt/PycharmProjects/matt_raio_bot_constraints/venv/bin/python -c \"import asyncio; from mcp_commands import mcp_toolkit_selector; asyncio.run(mcp_toolkit_selector('{query}'))\""
