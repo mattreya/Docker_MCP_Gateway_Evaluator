@@ -1,0 +1,21 @@
+[slash_command]
+name = "trivy"
+description = "Runs a Trivy security scan."
+usage = "/trivy <target> [scan_type]"
+
+[slash_command.args.target]
+name = "target"
+type = "string"
+description = "The target to scan (e.g., a directory path, image name)."
+required = true
+
+[slash_command.args.scan_type]
+name = "scan_type"
+type = "string"
+description = "The type of scan to perform (e.g. \"fs\" for filesystem, \"image\" for container image). Defaults to \"fs\"."
+required = false
+default = "fs"
+
+[slash_command.function]
+module = "trivy_commands"
+name = "run_trivy_scan"

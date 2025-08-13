@@ -2,6 +2,10 @@
 
 This project serves as a template for developing Python applications that integrate with the Gemini Command Line Interface (CLI). It demonstrates how to incorporate external Python packages like `bandit` for security analysis and `duckduckgo_mcp_interface` for web searches, and expose their functionalities as custom Gemini CLI slash commands.
 
+## What's New in This Repo
+
+We've recently enhanced this repository by integrating Trivy, a comprehensive open-source vulnerability scanner. The new `/trivy` slash command allows users to perform filesystem scans directly from the Gemini CLI. This integration streamlines the process of identifying security vulnerabilities in project dependencies and configurations, making security analysis an integral part of the development workflow within the CLI environment.
+
 ## Features
 
 - **Gemini CLI Integration:** Provides a structured way to define and manage custom slash commands for the Gemini CLI.
@@ -73,6 +77,7 @@ Once the project is set up, you can interact with it through the Gemini CLI usin
 -   **`/ddg`**: Performs a DuckDuckGo web search. You can specify a query as an argument.
 -   **`/nist`**: Displays the NIST guidelines for bot development.
 -   **`/preferences`**: Shows the current preferences configured for the Gemini CLI's behavior.
+-   **`/trivy`**: Runs a Trivy filesystem scan on the current directory. You can specify a target and scan type (e.g., `/trivy . fs`).
 
 ## Project Structure
 
