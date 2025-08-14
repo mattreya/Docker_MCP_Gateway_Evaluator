@@ -1,0 +1,3 @@
+name = "send_slack_report"
+description = "Sends a report to a Slack channel using the Slack MCP."
+command = "/home/matt/PycharmProjects/matt_raio_bot_constraints/venv/bin/python /home/matt/PycharmProjects/Docker_MCP_Gateway_Evaluator/slack_mcp_sender.py --channel '{channel}' --message '{message}'"

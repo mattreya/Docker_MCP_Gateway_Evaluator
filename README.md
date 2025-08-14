@@ -13,6 +13,7 @@ We've recently enhanced this repository by integrating Trivy, a comprehensive op
 - **DuckDuckGo Search Integration:** Offers a slash command (`/ddg`) to perform web searches using the DuckDuckGo API, leveraging the `duckduckgo_mcp_interface`.
 - **NIST Guidelines Reference:** Contains a reference to NIST guidelines (`/nist`) for secure bot development, emphasizing best practices for handling sensitive information.
 - **Configurable Preferences:** Introduces a preference system (`/preferences`) that allows the Gemini CLI to understand and adapt to user-defined preferences for various tasks, such as preferred tools for web searches, project analysis, and security scanning.
+- **Slack Integration:** Includes a slash command (`/send_slack_report`) to send reports to a Slack channel using a Slack MCP.
 
 ## Project Focus: Docker MCP and Toolkit Integration
 
@@ -78,11 +79,13 @@ Once the project is set up, you can interact with it through the Gemini CLI usin
 -   **`/nist`**: Displays the NIST guidelines for bot development.
 -   **`/preferences`**: Shows the current preferences configured for the Gemini CLI's behavior.
 -   **`/trivy`**: Runs a Trivy filesystem scan on the current directory. You can specify a target and scan type (e.g., `/trivy . fs`).
+-   **`/send_slack_report`**: Sends a report to a Slack channel. You need to specify the channel and the message.
 
 ## Project Structure
 
 -   `.gemini/commands/`: Contains the `.toml` files defining the custom Gemini CLI slash commands.
 -   `slash_commands.py`: Implements the Python functions that are executed by the slash commands.
+-   `slack_mcp_sender.py`: Contains the logic to send messages to a Slack channel via the Slack MCP.
 -   `requirements.txt`: Lists the project's Python dependencies.
 -   `NIST_guildlines.md`: Document outlining NIST guidelines for bot development.
 -   `.gitignore`: Specifies files and directories to be ignored by Git.
