@@ -37,6 +37,14 @@ This project's primary focus is the integration with Docker's Multi-Cloud Platfo
         ```
         Provide an identifier or description of the catalog item you're interested in, and the command will suggest appropriate tools.
 
+-   **`/send_slack_report`**:
+    *   **Purpose:** This command allows you to send a report to a specific Slack channel using the Slack MCP.
+    *   **How to use:**
+        ```
+        /send_slack_report --channel <your-channel-name> --message "<your-message>"
+        ```
+        Replace `<your-channel-name>` with the name of the Slack channel and `<your-message>` with the report you want to send.
+
 -   **`/askgordon`**:
     *   **Purpose:** While not directly tied to Docker MCP, this command is part of the new set of functionalities. Its specific purpose would be defined by its implementation, but it's designed to provide intelligent assistance or answer questions within the Gemini CLI context.
     *   **How to use:**
