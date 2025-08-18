@@ -2,8 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/libs/duckduckgo_mcp_interface" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/venv/src/bandit" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/venv/src/duckduckgo-mcp-interface" vcs="Git" />
   </component>
 </project>
